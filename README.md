@@ -98,7 +98,7 @@ creds to mint servers )</p>
         </div>
         <div class="feature-box">
             <h3 Survival</h3>
-            <p> For more things like updates to the website, please email Rzkimwar@gmail.com.</p>
+            <p> For more things like updates to the website,e please email Rzkimwar@gmail.com.</p>
         </div>
         <div class="feature-box">
             <h3> discord</h3>
@@ -109,7 +109,7 @@ creds to mint servers )</p>
 
 <section class="section" id="join">
     <h2>How To Join</h2>
-    <p><strong>Server IP:</strong>  play.vexioumsmp.net</p>
+    <p><strong>Server IP:</strong> 149.56.30.223:25577 </p>
     <p>Version: 1.21.11+</p>
 </section>
 
