@@ -79,6 +79,7 @@ footer {
 <body>
 
 <header>
+<img src="vx.png" alt="vx.png" width="200" height="200">
     <h1>vexom smp</h1>
     <p>Survival only</p>
     <a href="#join" class="button">go to ip</a>
@@ -86,34 +87,30 @@ footer {
 
 <section class="section">
     <h2>About The Server</h2>
-    <p><p>This is an open server for any person to join and for fun for endless possibilities                          
-(disclaimer 
-Admin are always on so cheating is not tolerated like</p>
-<p>(xray, freecam, flying hacks exc... including spawn killing )</P>
-</section>
-
+    <p>(owner lukeantquean, dev gameonace, mod crazychild,mod2 AltaVulpez, 
+creds to mint servers )</p>
 <section class="section">
     <h2>Extra</h2>
     <div class="features">
         <div class="feature-box">
-            <h3>owner lukeantquean</h3>
-            <p><p>maker of website Eightjoker33306.</p>
+            <h3>Eightjoker </h3>
+            <p><p>join the youtube @Eightjoker vexeoum</p>
         </div>
         <div class="feature-box">
             <h3 Survival</h3>
-            <p>for more things like updates to the website please email Rzkimwar@gmail.com.</p>
+            <p> For more things like updates to the website, please email Rzkimwar@gmail.com.</p>
         </div>
         <div class="feature-box">
             <h3> discord</h3>
-            <p>discord details.</p>
+            <p>MSG Lukeantquean Gamonace Eightjoker33306 or Asdo11 for the discord.</p>
         </div>
     </div>
 </section>
 
 <section class="section" id="join">
     <h2>How To Join</h2>
-    <p><strong>Server IP:</strong>  vexoumsmp.net</p>
-    <p>Version: 1.21.11</p>
+    <p><strong>Server IP:</strong>  play.vexioumsmp.net</p>
+    <p>Version: 1.21.11+</p>
 </section>
 
 <footer>
