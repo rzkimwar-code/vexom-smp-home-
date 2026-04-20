@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #1e1e1e, #121212);
+    color: white;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: url('https://wallpapercave.com/wp/wp2757874.jpg') center/cover;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #45a049;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-box {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #008000;
+    padding: 20px;
+    font-size: 14px;
+}
