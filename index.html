@@ -43,12 +43,16 @@
 
     let currentImageIndex = 0;
 
-    function updateHeroImage() {
-        heroTrack.style.transform = `translateX(-${currentImageIndex * 100}%)`;
-        currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+    function showSlide(index) {
+        heroTrack.style.transform = `translateX(-${index * 100}%)`;
     }
 
-    updateHeroImage();
+    function updateHeroImage() {
+        currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+        showSlide(currentImageIndex);
+    }
+
+    showSlide(0);
     setInterval(updateHeroImage, 5000);
 </script>
 
