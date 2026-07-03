@@ -10,7 +10,9 @@
 <body>
 
 <header class="hero">
-    <div id="hero-image" class="hero-image" aria-hidden="true"></div>
+    <div class="hero-carousel">
+        <div id="hero-track" class="hero-track" aria-live="polite"></div>
+    </div>
     <div class="hero-content">
         <img src="vx.png" alt="Vexom SMP Logo" width="200" height="200">
         <h1>Vexom SMP</h1>
@@ -20,7 +22,7 @@
 </header>
 
 <script>
-    const heroImage = document.getElementById('hero-image');
+    const heroTrack = document.getElementById('hero-track');
     const carouselImages = [
         'carousel_images/photocontest.png',
         'carousel_images/photocontest_battle.png',
@@ -33,11 +35,16 @@
         'carousel_images/photocontest_00.png'
     ];
 
+    heroTrack.innerHTML = carouselImages.map((imagePath) => `
+        <div class="hero-slide">
+            <img src="${imagePath}" alt="" loading="eager">
+        </div>
+    `).join('');
+
     let currentImageIndex = 0;
 
     function updateHeroImage() {
-        const imagePath = carouselImages[currentImageIndex];
-        heroImage.style.backgroundImage = `linear-gradient(to bottom, rgba(255,255,255,0.08), rgba(18,18,18,0.95)), url('${imagePath}')`;
+        heroTrack.style.transform = `translateX(-${currentImageIndex * 100}%)`;
         currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
     }
 

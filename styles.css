@@ -12,19 +12,49 @@ html {
 
 header.hero {
     background: #121212;
-    padding: 0 20px 100px;
+    padding: 0 0 100px;
 }
 
-.hero-image {
-    height: 320px;
-    margin: 0 -20px;
-    background:
-        linear-gradient(to bottom, rgba(255,255,255,0.08), rgba(18,18,18,0.95)),
-        url('https://wallpapercave.com/wp/wp2757874.jpg') center/cover no-repeat;
+.hero-carousel {
+    width: 100%;
+    height: min(78vh, 640px);
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-carousel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.08), rgba(18,18,18,0.95));
+    pointer-events: none;
+}
+
+.hero-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    will-change: transform;
+}
+
+.hero-slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .hero-content {
-    padding-top: 40px;
+    padding: 40px 20px 0;
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
