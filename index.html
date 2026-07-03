@@ -10,8 +10,8 @@
 <body>
 
 <header class="hero">
-    <div class="hero-carousel">
-        <div id="hero-track" class="hero-track" aria-live="polite"></div>
+    <div class="hero-carousel" aria-hidden="true">
+        <div id="hero-track" class="hero-track"></div>
     </div>
     <div class="hero-content">
         <img src="vx.png" alt="Vexom SMP Logo" width="200" height="200">
@@ -35,25 +35,13 @@
         'carousel_images/photocontest_00.png'
     ];
 
-    heroTrack.innerHTML = carouselImages.map((imagePath) => `
+    const slides = [...carouselImages, ...carouselImages].map((imagePath) => `
         <div class="hero-slide">
             <img src="${imagePath}" alt="" loading="eager">
         </div>
     `).join('');
 
-    let currentImageIndex = 0;
-
-    function showSlide(index) {
-        heroTrack.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    function updateHeroImage() {
-        currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
-        showSlide(currentImageIndex);
-    }
-
-    showSlide(0);
-    setInterval(updateHeroImage, 5000);
+    heroTrack.innerHTML = slides;
 </script>
 
 <section class="section">
